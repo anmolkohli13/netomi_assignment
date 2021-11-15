@@ -1,0 +1,90 @@
+#body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+
+}
+span{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: darkgreen;
+}
+#myform{
+    margin-top: 100px;
+    border: solid red 1px;
+    margin: 50px;
+    padding: 50px;
+    width: 600px;
+    background-color: rgb(233, 233, 233);
+}
+label{
+    color: darkgreen;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input{
+    height: 20px;
+    width: 100%;
+}
+button{
+    background-color: darkgreen;
+    height: 40px;
+    color: white;
+    margin-top: 20px;
+}
+.field{
+    margin-top: 10px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+@media(max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media(max-width:992px) {
+    #myform{
+        width: 990px;
+    }
+    .container {
+        width: 760px;
+    }
+    .field{
+        width:720px;
+    }
+}
+
+@media(max-width:768px) {
+    #myform{
+        width: 750px;
+    }
+    .container {
+        width: 100%;
+        padding: 0px 15px;
+    }
+}
+@media(max-width:320px){
+    #myform{
+        max-width: 310px;
+        margin: 0;
+        padding: 0;
+    }
+    .field{
+        padding: 10px;
+    }
+    .container{
+        width: 300px;
+        padding:0;
+    }
+    .field input{
+        width: 200px;
+    }
+}
+
+

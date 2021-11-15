@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netomi Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id = "container">
+        <!-- <iframe src="#"  id="frame1" name="myFrame"  > -->
+            <form id="myform" name="myform" method="post" target="myFrame" >
+                <span>Can you please provide your personal details ?</span>
+                <br>
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Name</label><br>
+                        <input id= "name" type="text"  name="name"><br>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="dob">Date of Birth</label><br>
+                        <input id="date" type="date" name= "dob"><br>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="contactno">Contact Number</label><br>
+                        <input id="cno" type="text" name="contactno"><br>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="Country">Country</label><br>
+                        <select name="country" id="country" onchange="populate()" >
+                            <!-- <option value="countrylist"></option> -->
+                        </select>
+                        <br>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="State">State</label><br>
+                        <select name="state" id="state">
+                            <!-- <option value="state"></option> -->
+                        </select>
+                        <br>    
+                    </div>
+                    
+                    <div class="field">
+                        <label for="email">Email</label><br>
+                        <input id= "email" type="text" name="email"><br>    
+                    </div>
+                    
+                </div>
+                
+        
+                <button type="submit"  >
+                    Submit
+                </button>
+        
+            </form>
+        <!-- </iframe> -->
+        
+
+        <div id = "res">
+            <!-- <p id = "message"></p> -->
+        </div>
+
+    </div>
+    
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
